@@ -10,7 +10,6 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px red solid; */
   padding-top: 0.5em;
 }
 nav ul li {
@@ -29,4 +28,59 @@ nav ul li a {
 #dashboard-heading,
 #booking-heading {
   text-align: center;
+}
+#forms {
+  /* border: 1px red solid; */
+  width: 30%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(57, 110, 180);
+}
+#formBtns {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#formBtns button {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: large;
+  padding: 10px;
+  cursor: pointer;
+}
+#formBtns button:hover {
+  background-color: rgb(242, 222, 0);
+}
+
+#loginForm > input[type="text"],
+#loginForm > input[type="password"],
+#loginForm > input[type="submit"],
+#registerForm > input[type="text"],
+#registerForm > input[type="password"],
+#registerForm > input[type="email"],
+#registerForm > input[type="submit"] {
+  width: 90%;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: large;
+  background-color: white;
+}
+#loginForm > input[type="submit"],
+#registerForm > input[type="submit"] {
+  width: 30%;
+  color: black;
+  font-size: large;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+#loginForm input[type="submit"]:hover,
+#registerForm input[type="submit"]:hover {
+  background-color: rgb(68, 165, 41);
 }
