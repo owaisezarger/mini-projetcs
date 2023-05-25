@@ -84,3 +84,6 @@ nav ul li a {
 #registerForm input[type="submit"]:hover {
   background-color: rgb(68, 165, 41);
 }
+#registerForm input[type="checkbox"] {
+  display: inline-block;
+}
