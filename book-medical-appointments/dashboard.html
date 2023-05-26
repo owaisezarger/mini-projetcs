@@ -15,13 +15,14 @@
         <input type="text" name="name" id="name" placeholder="Name" />
         <input type="text" name="image" id="image" placeholder="ImageURL" />
         <select name="specialization" id="specialization">
+          <option value="">Specialization</option>
           <option value="cardiologist">Cardiologist</option>
           <option value="dermatologist">Dermatologist</option>
           <option value="pediatrician">Pediatrician</option>
           <option value="psychiatrist">Psychiatrist</option>
         </select>
         <input
-          type="text"
+          type="number"
           name="experience"
           id="experience"
           placeholder="Experience"
@@ -32,11 +33,31 @@
           id="location"
           placeholder="Location"
         />
-        <input type="date" name="date" id="date" />
-        <input type="text" name="slots" id="slots" placeholder="No. of slots" />
-        <input type="text" name="fee" id="fee" placeholder="fee" />
+        <input type="datetime-local" name="date" id="date" />
+        <input
+          type="number"
+          name="slots"
+          id="slots"
+          placeholder="No. of slots"
+        />
+        <input type="number" name="fee" id="fee" placeholder="fee" />
         <input type="submit" value="Submit" />
       </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Experience</th>
+            <th>Specialization</th>
+            <th>Location</th>
+            <th>Slots</th>
+            <th>Edit</th>
+            <th>Delete</th>
+            <th>Appointment</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
     <script src="./dashboard.js" type="module"></script>
   </body>
