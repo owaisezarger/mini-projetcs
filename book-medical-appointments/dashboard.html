@@ -10,6 +10,34 @@
   <body>
     <div id="navbar"></div>
     <h1 id="dashboard-heading">Doctor's Dashboard</h1>
+    <div class="appointmentForm">
+      <form id="appointmentForm">
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="text" name="image" id="image" placeholder="ImageURL" />
+        <select name="specialization" id="specialization">
+          <option value="cardiologist">Cardiologist</option>
+          <option value="dermatologist">Dermatologist</option>
+          <option value="pediatrician">Pediatrician</option>
+          <option value="psychiatrist">Psychiatrist</option>
+        </select>
+        <input
+          type="text"
+          name="experience"
+          id="experience"
+          placeholder="Experience"
+        />
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Location"
+        />
+        <input type="date" name="date" id="date" />
+        <input type="text" name="slots" id="slots" placeholder="No. of slots" />
+        <input type="text" name="fee" id="fee" placeholder="fee" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
     <script src="./dashboard.js" type="module"></script>
   </body>
 </html>
